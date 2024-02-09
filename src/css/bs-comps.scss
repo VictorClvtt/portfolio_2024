@@ -1,0 +1,39 @@
+$primary: #fffffe;
+
+.container{
+    width: 100%;
+    max-width: unset;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbarNavAltMarkup.collapse{
+    justify-content: right;
+}
+
+.navbar{
+    background-color: $primary;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.nav-link{
+    transition: 0.3s;
+
+    &:hover{
+       background-color: #00000011;
+       margin: 0 5px;
+    }
+    
+}
+
+.navbar-brand{
+    font-family: serif;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    gap: 10px;
+
+    img{
+        height: 25px;
+    }
+}
