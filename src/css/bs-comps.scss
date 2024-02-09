@@ -37,3 +37,19 @@ $primary: #fffffe;
         height: 25px;
     }
 }
+
+#accordionExample{
+
+    .accordion-item{
+        padding: 0;
+        border-color: #000000;
+    }
+
+    .accordion-button{
+        gap: 15px;
+
+        img{
+            height: 30px;
+        }
+    }
+}

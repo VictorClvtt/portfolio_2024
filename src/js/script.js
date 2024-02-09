@@ -18,7 +18,7 @@ const projetos = [
 
 function render_cards(i){
     document.getElementById('cards').innerHTML += `<div class="project-card">
-    <img src="./src/assets/img/${projetos[i].nome}.png" alt="${projetos[i].nome}">
+    <img src="./src/assets/img/${projetos[i].nome}.png" alt="${projetos[i].nome}" >
     <div class="card-info">
       <div>
         <a href="https://victorclvtt.github.io/${projetos[i].nome}/">${projetos[i].nome}</a>

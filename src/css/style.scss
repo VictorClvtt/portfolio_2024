@@ -5,7 +5,6 @@ body{
     flex-direction: column;
     font-family: 'Prompt', sans-serif;
     background-color: #eff0f3;
-    gap: 50px;
 }
 
 header{
@@ -13,6 +12,7 @@ header{
     align-items: center;
     height: fit-content;
     padding: 0 7vw;
+    margin: 2.6vw 0 45px;
 
     img{
         width: 60%;
@@ -68,10 +68,6 @@ header{
 section{
     display: flex;
     flex-direction: column;
-}
-
-.tech-section{
-    background-color: #272343;
 
     div{
         padding: 0 7vw;
@@ -91,11 +87,17 @@ section{
     }
 }
 
+.projects-section{
+    background-color: #272343;
+    padding-bottom: 2.6vw;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
 .project-card{
     display: flex;
     background-color: #e3f6f57b;
-    height: 165px;
-    margin: 20px 7vw;
+    height: 13vw;
+    margin: 20px 7vw 0;
     padding: 0 !important;
     border: 1px solid #9484ff;
     border-radius: 20px;
@@ -169,6 +171,46 @@ section{
             border-radius: 0 0 10px 0;
             border: 1px solid #000000;
             overflow:auto;
+        }
+    }
+}
+
+.tech-section{
+    border-top: 1px solid #9484ff;
+    padding: 2.6vw 0;
+
+    div{
+
+        h2{
+            color: var(--bs-heading-color);
+        }
+
+        hr{
+            border-bottom: #000000;
+        }
+    }
+
+    .tech-section-section-title{
+        display: flex;
+        align-items: center;
+        height: fit-content;
+        gap: 10px;
+        margin: 20px 0 5px;
+        
+        h3{
+            font-weight: 300;
+            font-size: 15px;
+            margin: 0;
+            white-space: nowrap;
+        }
+
+        hr{
+            opacity: 0.5;
+            
+            border: unset;
+            border-bottom: 1px dotted #000000;
+            margin-top: 3px;
+            padding: 0;
         }
     }
 }
