@@ -41,3 +41,9 @@ for(var a=0 ; a<projetos.length ; a++){
         insert_technologies(a, b)
     }
 }
+
+function hide_nav_collapse(){
+    if (window.innerWidth < 990) {
+        document.getElementsByClassName('navbar-toggler')[0].click();
+    }
+}

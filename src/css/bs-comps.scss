@@ -12,6 +12,9 @@ $primary: #fffffe;
 }
 
 .navbar{
+    width: 100%;
+    z-index: 1;
+    position: fixed;
     background-color: $primary;
     border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
@@ -42,7 +45,8 @@ $primary: #fffffe;
 
     .accordion-item{
         padding: 0;
-        border-color: #000000;
+        border-color: rgba(0, 0, 0, 0.4);
+
     }
 
     .accordion-button{
@@ -51,5 +55,61 @@ $primary: #fffffe;
         img{
             height: 30px;
         }
+
+        &:hover{
+            z-index: 0;
+        }
+    }
+}
+
+.accordion-body{
+    
+    p{
+        margin: 0;
+    }
+}
+
+footer{
+    background-color: #272343 !important;
+
+    #main-div{
+        flex-direction: column;
+
+        h6{
+            width: fit-content;
+            border-bottom: 1px dotted #fffffe91;
+        }
+
+        a.btn.btn-floating.m-1{
+            padding: 0;
+            img{
+                height: 34px;
+            }
+        }
+    }
+
+    #footer-main-title{
+        display: flex;
+        align-items: center;
+        font-family: serif;
+        border: unset !important;
+        font-size: 22px;
+        gap: 12px;
+
+        img{
+            height: 23px;
+        }
+    }
+
+    .footer-section{
+        margin: 0 !important;
+        p{
+            margin: 0 0 5px;
+        }
+    }
+
+    .main-footer-info{
+        justify-content: space-between;
+
     }
 }

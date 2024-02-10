@@ -10,6 +10,9 @@
 }
 
 .navbar {
+  width: 100%;
+  z-index: 1;
+  position: fixed;
   background-color: #fffffe;
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
@@ -35,11 +38,56 @@
 
 #accordionExample .accordion-item {
   padding: 0;
-  border-color: #000000;
+  border-color: rgba(0, 0, 0, 0.4);
 }
 #accordionExample .accordion-button {
   gap: 15px;
 }
 #accordionExample .accordion-button img {
   height: 30px;
+}
+#accordionExample .accordion-button:hover {
+  z-index: 0;
+}
+
+.accordion-body p {
+  margin: 0;
+}
+
+footer {
+  background-color: #272343 !important;
+}
+footer #main-div {
+  flex-direction: column;
+}
+footer #main-div h6 {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 1px dotted rgba(255, 255, 254, 0.568627451);
+}
+footer #main-div a.btn.btn-floating.m-1 {
+  padding: 0;
+}
+footer #main-div a.btn.btn-floating.m-1 img {
+  height: 34px;
+}
+footer #footer-main-title {
+  display: flex;
+  align-items: center;
+  font-family: serif;
+  border: unset !important;
+  font-size: 22px;
+  gap: 12px;
+}
+footer #footer-main-title img {
+  height: 23px;
+}
+footer .footer-section {
+  margin: 0 !important;
+}
+footer .footer-section p {
+  margin: 0 0 5px;
+}
+footer .main-footer-info {
+  justify-content: space-between;
 }/*# sourceMappingURL=bs-comps.css.map */
