@@ -135,6 +135,10 @@ section{
 
             a{
                 color:#e3f6f5;
+
+                &:hover{
+                    color: #272343;
+                }
             }
 
             .techs{

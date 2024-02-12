@@ -123,6 +123,9 @@ section div hr {
 .project-card .card-info div a {
   color: #e3f6f5;
 }
+.project-card .card-info div a:hover {
+  color: #272343;
+}
 .project-card .card-info div .techs {
   display: flex;
   align-items: center;
